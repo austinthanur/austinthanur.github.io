@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gallery - Edutrip Yogyakarta</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <script>
+        window.addEventListener('beforeunload', function() {
+            window.scrollTo(0, 0);
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        })
+    </script>
+</head>
+<body class="">
+    <noscript><div>I don't see any JavaScript here!? What is this, 1999? Turn it on.</div></noscript>
+    <div class="loading">
+        <p>0%</p>
+    </div>
+    <div class="container">
+        <div class="gallery">
+            <div class="card-container">
+                <div class="grouper">
+                    <div class="card-group">
+                    </div>
+                    <div class="card-group">
+                    </div>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/about.html">About Us</a></li>
+                        <li><a href="/gallery.html" class="active">Gallery</a></li>
+                        <li><a href="/trip.html">Our Trip</a></li>
+                        <div class="close">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </ul>
+                </div>
+                <div class="grouper">
+                    <div class="card-group">
+                    </div>
+                    <div class="card-group">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="menuBtn">Menu</span>
+    </div>
+    <script type="module" src="js/gallery.js"></script>
+</body>
+</html>

@@ -4,30 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edutrip - Yogyakarta</title>
+    <title>Edutrip Yogyakarta</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js">
+    <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/index.css">
-    <style>
-
-    </style>
+    <script>
+        window.addEventListener('beforeunload', function() {
+            window.scrollTo(0, 0);
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        })
+    </script>
 </head>
-<body>
+<body class="noscroll">
     <noscript><div>I don't see any JavaScript here!? What is this, 1999? Turn it on.</div></noscript>
     <header>
         <div class="loading">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="line"></span>
             <div class="block"></div>
+            <span class="skip hide">Skip</span>
         </div>
         <div class="headline-container">
             <div class="headline">
                 <h1>EDUTRIP</h1>
                 <p>Yogyakarta</p>
             </div>
-            <span>Scroll Down ↓</span>
+            <span class="scroll">Scroll Down ↓</span>
         </div>
     </header>
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="/index.html" class="active">Home</a></li>
+                <li><a href="/about.html">About Us</a></li>
+                <li><a href="/gallery.html">Gallery</a></li>
+                <li><a href="/perjalanan.html">Perjalanan Kami</a></li>
+            </ul>
+        </nav>
+        <div class="tracker-container">
+            <div class="image-track" data-mouse-down-at="0" data-prev-percentage="50" data-percentage="50">
+                <img src="https://images.unsplash.com/photo-1524781289445-ddf8f5695861?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" alt="">
+                <img src="https://images.unsplash.com/photo-1548021682-1720ed403a5b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" alt="">
+                <img src="https://images.unsplash.com/photo-1610194352361-4c81a6a8967e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80" alt="">
+                <img src="https://images.unsplash.com/photo-1618202133208-2907bebba9e1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80" alt="">
+            </div>
+            <a href="/gallery.html" class="vgallery">View Gallery</a>
+        </div>
+        <div class="test"></div>
+        <div class="test"></div>
+    </div>
     <script src="js/index.js"></script>
 </body>
 </html>
